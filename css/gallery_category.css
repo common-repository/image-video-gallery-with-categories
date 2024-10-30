@@ -1,0 +1,130 @@
+.neo_gallery_shortcode,
+.neo_page_gallery{
+    width: 100%;
+    float: left;
+}
+
+.neo_gallery_shortcode_inner{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.neo_gallery_shortcode_inner .neo_category_section{
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+}
+
+.neo_category_section .neo_gallery_category_all{
+    text-align: center;
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.neo_category_section .neo_gallery_category_all .neo_category{
+    padding: 5px 20px;
+    color: #000;
+    border: 1px solid #000;
+    font-size: 14px;
+    margin: 0 10px 0;
+    cursor: pointer;
+}
+
+.neo_gallery_shortcode_inner .neo_loading_data {
+    width: 100%;
+    float: left;
+    padding: 20px 10px;
+}
+
+.neo_gallery_shortcode_inner .neo_category_images,
+.neo_page_gallery .neo_page_gallery_innner .neo_page_images{
+    width: 25%;
+    padding: 12px 10px;
+    float: left;
+    position: relative;
+    text-align: center;
+    height: 205px;
+    overflow: hidden;
+}
+
+.neo_loading_data .neo_category_images img,
+.neo_page_gallery_innner .neo_page_images img{
+    width: 100%;
+    height: 100%;
+    transition: all 1.3s 0.5s;
+}
+
+.neo_gallery_shortcode_inner .neo_gallery_category_all .current_category,
+.neo_gallery_shortcode_inner .neo_gallery_category_all .neo_category:hover{
+    color: #fff;
+    background: #000000d1;
+    border: 1px solid #000000;
+}
+
+.neo_page_gallery .neo_page_gallery_innner{
+    width: 100%;
+    float: left;
+    padding: 20px;
+}
+
+.neo_loading_data .neo_category_images img:hover,
+.neo_page_gallery .neo_page_gallery_innner .neo_page_images img:hover{
+    transform: scale3d(0.9, 0.9, 0.9);
+    transition: all 1.3s;
+}
+
+#neo_icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#neo_icon i{
+    color: #fff;
+    font-size: 40px;
+}
+
+#loadMoreCat,
+#loadMore{
+    width: 100%;
+    float: left;
+}
+
+.neo_loader{
+    width: 80px;
+    margin: 0 auto;
+}
+/****Responsive*********/
+@media screen and (max-width: 1366px) {
+
+}
+@media  screen   and (max-width: 1099px) {
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .neo_gallery_shortcode_inner .neo_category_images,
+    .neo_page_gallery .neo_page_gallery_innner .neo_page_images{
+        height: 150px;
+    }
+
+}
+@media  screen and (max-width: 767px) {
+
+    .neo_page_gallery .neo_page_gallery_innner .neo_page_images {
+        width: 100%;
+    }
+
+    .neo_gallery_shortcode_inner .neo_category_images{
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .neo_gallery_shortcode_inner .neo_gallery_category_all .neo_category{
+        padding: 8px;
+        margin: 0 5px;
+    }
+
+}
